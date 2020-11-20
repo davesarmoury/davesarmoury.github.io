@@ -1,0 +1,14 @@
+{
+  "name": "daves-armory",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "servor public"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.0.2",
+    "servor": "^4.0.2",
+    "tailwindcss": "^2.0.1"
+  }
+}

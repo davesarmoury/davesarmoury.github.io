@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML5 Page</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <style type="text/css">
+    .bg-primary {
+      background-color: #f7c680;
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/b70475c9ef.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="flex flex-col h-screen bg-primary" id="top">
+  <div class="flex items-center flex-grow">
+    <section class="container flex items-center justify-between mx-auto">
+      <div style="width: 725px">
+        <h1 class="mb-2 text-3xl font-semibold leading-relaxed tracking-wide uppercase">
+          uncommon and unique applications using industrial robotic arms!
+        </h1>
+        <p class="mb-8 text-lg font-light leading-normal">
+          Hey, I'm Dave, and welcome to The Armory.
+          I've spent my entire career in the robotics industry, everything from wiring and calibration, up through software, and now I'm doing R&D robotics.
+          Watch the introduction video <i class="ml-2 text-gray-500 fa fa-arrow-right"></i>
+        </p>
+        <div class="mb-8 text-lg font-light">
+          <a href="#videos" style="color: #5a7490" class="mr-8 text-lg font-semibold border-b border-white hover:border-gray-800 hover:text-gray-800">Latest Videos</a>
+          <a href="#robots" style="color: #5a7490" class="mr-8 text-lg font-semibold border-b border-white hover:border-gray-800 hover:text-gray-800">Meet the Robots</a>
+          <a href="#contact" style="color: #5a7490" class="mr-8 text-lg font-semibold border-b border-white hover:border-gray-800 hover:text-gray-800">Contact Us</a>
+        </div>
+      </div>
+      <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Bf6PckGF4eQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!--<div style="width: 560px; height: 315px;" class="bg-white"></div>-->
+      </div>
+    </section>
+  </div>
+  <div class="container mx-auto">
+    <div class="mb-2 text-lg text-gray-700">
+      Don't forget to follow us on social media!
+    </div>
+    <ul class="flex items-center self-end justify-start mb-12 list-none">
+      <li class="mr-6"><a href="#" class="pb-2 text-gray-500 border-b border-gray-100 hover:border-gray-800 hover:text-gray-800"><i class="fa fa-twitter fa-2x"></i></a></li>
+      <li class="mr-6"><a href="#" class="pb-2 text-gray-500 border-b border-gray-100 hover:border-gray-800 hover:text-gray-800"><i class="fa fa-github fa-2x"></i></a></li>
+      <li class="mr-6"><a href="#" class="pb-2 text-gray-500 border-b border-gray-100 hover:border-gray-800 hover:text-gray-800"><i class="fa fa-instagram fa-2x"></i></a></li>
+      <li class="mr-6"><a href="#" class="pb-2 text-gray-500 border-b border-gray-100 hover:border-gray-800 hover:text-gray-800"><i class="fa fa-youtube-play fa-2x"></i></a></li>
+      <li class="mr-6"><a href="#" class="pb-2 text-gray-500 border-b border-gray-100 hover:border-gray-800 hover:text-gray-800"><i class="fab fa-discord fa-2x"></i></a></li>
+      <li class="mr-6"><a href="#" class="pb-2 text-gray-500 border-b border-gray-100 hover:border-gray-800 hover:text-gray-800"><i class="fab fa-patreon fa-2x"></i></a></li>
+      <li class="mr-6"><a href="#" class="pb-2 text-gray-500 border-b border-gray-100 hover:border-gray-800 hover:text-gray-800"><i class="fa fa-facebook fa-2x"></i></a></li>
+    </ul>
+  </div>
+</header>
+
+<article class="min-h-screen bg-gray-100" id="videos">
+  <section class="container pt-12 mx-auto">
+    <div class="flex items-center justify-between">
+      <h2 class="text-2xl uppercase"><a href="#videos" class="text-gray-400 border-gray-400 hover:border-b">#</a> Latest Videos</h2>
+      <a href="#top" class="text-gray-300 border-b border-transparent hover:border-gray-300">Back to Top <i class="fa fa-arrow-up"></i></a>
+    </div>
+  </section>
+</article>
+
+<article class="h-screen" id="robots">
+  <section class="flex flex-col items-center justify-center h-full pt-12 overflow-hidden">
+    <div class="container mx-auto mb-12">
+      <div class="flex items-center justify-between w-full">
+        <h2 class="text-2xl uppercase"><a href="#robots" class="text-gray-400 border-gray-400 hover:border-b">#</a> The Robots</h2>
+        <a href="#top" class="text-gray-300 border-b border-transparent hover:border-gray-300">Back to Top <i class="fa fa-arrow-up"></i></a>
+      </div>
+    </div>
+    <div class="flex items-center justify-center flex-grow w-full text-gray-100 bg-gray-900">
+
+      <div class="flex flex-col items-center justify-center flex-grow h-full border-r border-gray-500 hover:bg-gray-800">
+        <img src="//placehold.it/560x315" alt="Picture of Susan, or maybe some youtube?" class="mb-8" />
+        <h3 class="mb-8 text-4xl font-semibold">Hello, I'm Susan.</h3>
+        <p><a href="#robots-susan" class="underline text=gray-100">Click here</a> for more details.</p>
+      </div>
+
+      <div class="flex flex-col items-center justify-center flex-grow h-full border-r border-gray-500 hover:bg-gray-800">
+        <img src="//placehold.it/560x315" alt="Picture of Herman, or maybe some youtube?" class="mb-8" />
+        <h3 class="mb-8 text-4xl font-semibold">Hi, I'm Herman</h3>
+        <p><a href="#robots-herman" class="underline text=gray-100">Click here</a> for more details.</p>
+      </div>
+
+    </div>
+  </section>
+</article>
+
+<article class="min-h-screen bg-gray-100" id="robots-susan">
+  <section class="container pt-12 mx-auto">
+    <div class="flex items-center justify-between">
+      <h2 class="text-2xl uppercase"><a href="#robots-susan" class="text-gray-400 border-gray-400 hover:border-b">#</a> Meet Susan</h2>
+      <a href="#top" class="text-gray-300 border-b border-transparent hover:border-gray-300">Back to Top <i class="fa fa-arrow-up"></i></a>
+    </div>
+
+    <div class="text-lg font-normal grid grid-cols-2 gap-2">
+      <div class="pr-4">Manufacturer</div>
+      <div class="font-semibold">Kuka Robotics</div>
+
+      <div class="pr-4">Model</div>
+      <div class="font-semibold">KR20</div>
+
+      <div class="pr-4">Max Payload</div>
+      <div class="font-semibold">20Kg</div>
+
+      <div class="pr-4">Reach</div>
+      <div class="font-semibold">1813mm</div>
+
+      <div class="pr-4">Axis</div>
+      <div class="font-semibold">6</div>
+    </div>
+  </section>
+</article>
+
+<article class="min-h-screen" id="robots-herman">
+  <section class="container pt-12 mx-auto">
+    <div class="flex items-center justify-between">
+      <h2 class="text-2xl uppercase"><a href="#robots-herman" class="text-gray-400 border-gray-400 hover:border-b">#</a> Meet Herman</h2>
+      <a href="#top" class="text-gray-300 border-b border-transparent hover:border-gray-300">Back to Top <i class="fa fa-arrow-up"></i></a>
+    </div>
+
+    <div class="text-lg font-normal grid grid-cols-2 gap-2">
+      <div class="pr-4">Manufacturer</div>
+      <div class="font-semibold">Universal</div>
+
+      <div class="pr-4">Model</div>
+      <div class="font-semibold">UR3</div>
+
+      <div class="pr-4">Max Payload</div>
+      <div class="font-semibold">3Kg</div>
+
+      <div class="pr-4">Reach</div>
+      <div class="font-semibold">500mm</div>
+
+      <div class="pr-4">Axis</div>
+      <div class="font-semibold">6</div>
+    </div>
+  </section>
+</article>
+
+<article class="min-h-screen bg-gray-100" id="contact">
+  <section class="container pt-12 mx-auto">
+    <div class="flex items-center justify-between">
+      <h2 class="text-2xl uppercase"><a href="#contact" class="text-gray-400 border-gray-400 hover:border-b">#</a> Contact</h2>
+      <a href="#top" class="text-gray-300 border-b border-transparent hover:border-gray-300">Back to Top <i class="fa fa-arrow-up"></i></a>
+    </div>
+  </section>
+</article>
+
+  
+</body>
+</html>

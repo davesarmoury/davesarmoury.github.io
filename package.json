@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "servor public"
+    "start": "servor ."
   },
   "devDependencies": {
     "autoprefixer": "^10.0.2",

@@ -1,0 +1,18 @@
+extends layout.pug
+include section.pug
+
+block body
+  include hero.pug
+
+  +sectionSkeleton("videos", "Latest Videos")
+  include robots.pug
+  +sectionSkeleton("robots-susan", "Meet Susan")
+  +sectionSkeleton("robots-herman", "Meet Herman")
+  +sectionSkeleton("contact", "Contact Us")
+    div: input
+    div: input
+    div: textarea
+
+    include hero/follow.pug
+
+

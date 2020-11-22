@@ -4,11 +4,17 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "servor public"
+    "start": "servor public",
+    "dev:tailwind": "postcss src/styles/index.css -o public/styles.css",
+    "dev:pug": "node src/page/build.js",
+    "dev": "yarn dev:pug && yarn dev:tailwind"
   },
   "devDependencies": {
-    "autoprefixer": "^10.0.2",
+    "autoprefixer": "^9",
+    "postcss-cli": "^8.3.0",
+    "pug": "^3.0.0",
     "servor": "^4.0.2",
-    "tailwindcss": "^2.0.1"
+    "tailwindcss": "^2.0.1",
+    "tailwindcss-cli": "^0.1.2"
   }
 }

@@ -1,0 +1,56 @@
+article.h-screen#robots
+  section.flex.flex-col.items-center.justify-center.h-full.pt-12.overflow-hidden
+    .container.mx-auto.mb-12
+      .flex.items-center.justify-between.w-full
+        h2.text-2xl.uppercase
+          a.text-gray-400.border-gray-400( href="#robots" class="hover:border-b" ) #
+          |
+          | Meet the Robots
+        a.text-gray-300.border-b.border-transparent( href="#top" class="hover:border-gray-300" )
+          | Back to Top
+          |
+          i.fa.fa-arrow-up
+    .flex.items-center.justify-center.flex-grow.w-full.text-gray-100.bg-gray-900
+      .flex.flex-col.items-center.justify-center.flex-grow.h-full.border-gray-500( class="hover:bg-gray-800 transition-colors" )
+        img.mb-8( src="//placehold.it/560x315" alt="Picture of Susan, or maybe some youtube?" )
+        h3.mb-8.text-4xl.font-semibold Hello, I'm Susan.
+        div.mb-8( class="w-1/4" )
+          table.w-full.border.border-separate.border-transparent.table-auto
+            tbody
+              tr
+                th.pb-2.pr-2.text-right Manufacturer
+                td.pb-2
+                  a.font-semibold.border-b( href="https://www.kuka.com/" class="hover:border-gray-600" target="_blank" rel="noopener" )
+                    | Kuka Robotics
+                    |
+                    i.text-sm.fa.fa-external-link
+              tr
+                th.pb-2.pr-2.text-right Model
+                td.pb-2
+                  a.font-semibold.border-b( href="https://www.kuka.com/en-ca/products/robotics-systems/industrial-robots/kr-cybertech" class="hover:border-gray-600" target="_blank" rel="noopener" )
+                    | KR20
+                    |
+                    i.text-sm.fa.fa-external-link
+              tr
+                th.pb-2.pr-2.text-right Max Payload
+                td.pb-2 20Kg
+              tr
+                th.pb-2.pr-2.text-right Reach
+                td.pb-2 1813mm
+              tr
+                th.pr-2.text-right Axis
+                td 6
+        p
+          | You can find more about me
+          |
+          a.underline.text-gray-100( href="#robots-susan" ) below
+          | .
+
+      div.flex.flex-col.items-center.justify-center.flex-grow.h-full.border-gray-500( class="hover:bg-gray-800 transition-colors" )
+        img.mb-8( src="//placehold.it/560x315" alt="Picture of Herman, or maybe some youtube?" )
+        h3.mb-8.text-4xl.font-semibold Hi, I'm Herman
+        p
+          a.underline.text-gray-100( href="#robots-herman" ) Click here
+          |
+          | for more details.
+

@@ -1,0 +1,21 @@
+include hero/social.pug
+
+header( class="flex flex-col h-screen bg-primary" id="top" )
+  .container.flex.items-center.flex-grow.mx-auto
+    section.flex.items-center.justify-between
+      .mr-8
+        h1.mb-4.text-3xl.font-semibold.leading-relaxed.tracking-wide.uppercase
+          | uncommon and uniquye applications using industrial robotic arms!
+        p.mb-8.text-xl.font-light.leading-normal.text-gray-700
+          | Hey, I'm Dave, and welcome to The Armory.
+          | I've bspent my entire career in the robotics industry, everything from wiring and calibration, through software, and now I'm doing R&D robotics.
+          | Watch the intorudction video
+          i.ml-2.text-gray-500.fa.fa-arrow-right
+        .mb-8.text-lg.font-light
+          a.mr-8.text-lg.font-semibold.border-b.border-white( href="#videos" class="hover:border-gray-800 hover:text-gray-800" style="color: #5a7490" ) Latest Videos
+          a.mr-8.text-lg.font-semibold.border-b.border-white( href="#robots" class="hover:border-gray-800 hover:text-gray-800" style="color: #5a7490" ) Meet the Robots
+          a.mr-8.text-lg.font-semibold.border-b.border-white( href="#contact" class="hover:border-gray-800 hover:text-gray-800" style="color: #5a7490" ) Contact Us
+      div
+        iframe( width="720" height="405" src="https://www.youtube.com/embed/Bf6PckGF4eQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen )
+        
+  include hero/follow.pug

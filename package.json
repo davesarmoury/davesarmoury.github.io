@@ -6,11 +6,14 @@
   "scripts": {
     "start": "servor public",
     "dev:tailwind": "postcss src/styles/index.css -o public/styles.css",
-    "dev:pug": "node src/page/build.js",
+    "dev:pug": "node src/build.js",
     "dev": "yarn dev:pug && yarn dev:tailwind"
   },
   "devDependencies": {
     "autoprefixer": "^9",
+    "dotenv": "^8.2.0",
+    "js-yaml": "^3.14.0",
+    "node-fetch": "^2.6.1",
     "postcss-cli": "^8.3.0",
     "pug": "^3.0.0",
     "servor": "^4.0.2",

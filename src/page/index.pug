@@ -1,5 +1,6 @@
 extends layout.pug
 include section.pug
+include robot.pug
 
 block body
   include hero.pug
@@ -7,12 +8,10 @@ block body
   +sectionSkeleton("videos", "Latest Videos")
   include robots.pug
   +sectionSkeleton("robots-susan", "Meet Susan")
+    +robot([], '', robots.susan.media)
   +sectionSkeleton("robots-herman", "Meet Herman")
-  +sectionSkeleton("contact", "Contact Us")
-    div: input
-    div: input
-    div: textarea
+    +robot([], '', robots.susan.media)
 
-    include hero/follow.pug
+  include hero/follow.pug
 
 

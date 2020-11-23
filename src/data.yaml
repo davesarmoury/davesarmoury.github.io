@@ -1,0 +1,25 @@
+heroYoutubeId: 'Bf6PckGF4eQ'
+latestVideoIds:
+  - 'first'
+  - 'second'
+  - 'third'
+playlistIds:
+  - 'pl-1'
+  - 'pl-2'
+  - 'pl-3'
+robots:
+  susan:
+    videoIds:
+      - ''
+    playlistId: ''
+    media:
+      - 'https://twitter.com/DavesArmoury/status/1329448611818696716'
+      - 'https://twitter.com/DavesArmoury/status/1328061806997344257'
+      - 'https://www.instagram.com/p/CHxw8jmghtj/'
+      - '//placehold.it/512x512'
+  herman:
+    videoIds:
+      - ''
+    playlistId: ''
+    media:
+      - '//placehold.it/512x512'

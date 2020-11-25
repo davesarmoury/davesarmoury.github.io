@@ -1,4 +1,4 @@
-# Dave's Armory Website
+# Dave's Armoury Website
 
 ## Getting Started
 

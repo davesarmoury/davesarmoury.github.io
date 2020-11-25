@@ -1,3 +1,4 @@
+youtubeChannelId: 'UCliwFXpKVqoLUcNZG4lEupg'
 heroYoutubeId: 'Bf6PckGF4eQ'
 latestVideoIds:
   - 'first'
@@ -13,9 +14,8 @@ robots:
       - ''
     playlistId: ''
     media:
-      - 'https://twitter.com/DavesArmoury/status/1329448611818696716'
-      - 'https://twitter.com/DavesArmoury/status/1328061806997344257'
       - 'https://www.instagram.com/p/CHxw8jmghtj/'
+      - 'https://twitter.com/DavesArmoury/status/1328061806997344257'
       - '//placehold.it/512x512'
   herman:
     videoIds:

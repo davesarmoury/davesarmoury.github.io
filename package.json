@@ -6,7 +6,7 @@
   "scripts": {
     "start": "servor public",
     "dev:tailwind": "postcss src/styles/index.css -o public/styles.css",
-    "dev:pug": "node src/build.js",
+    "dev:pug": "node src/build/index.js",
     "dev": "yarn dev:pug && yarn dev:tailwind"
   },
   "devDependencies": {

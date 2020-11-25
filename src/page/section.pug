@@ -1,6 +1,6 @@
 mixin sectionSkeleton(sectionId, title, fixed = false)
   article( id=sectionId class=(fixed ? 'h-screen' : 'min-h-screen' ) )
-    section.container.pt-12.mx-auto
+    section.container.pt-12.mx-auto.mb-12
       .flex.items-center.justify-between
         h2.text-2xl.uppercase
           a.text-gray-400.border-gray-400( class="hover:border-b" href="#" + sectionId ) #

@@ -2,7 +2,7 @@ include hero/social.pug
 
 header( class="flex flex-col h-screen bg-primary" id="top" )
   .container.flex.items-center.flex-grow.mx-auto
-    section.flex.items-center.justify-between
+    section.flex.flex-col.items-center.justify-between( class="sm:flex-row" )
       .mr-8
         h1.mb-4.text-3xl.font-semibold.leading-relaxed.tracking-wide.uppercase
           | uncommon and uniquye applications using industrial robotic arms!
@@ -16,6 +16,6 @@ header( class="flex flex-col h-screen bg-primary" id="top" )
           a.mr-8.text-lg.font-semibold.border-b.border-white( href="#robots" class="hover:border-gray-800 hover:text-gray-800" style="color: #5a7490" ) Meet the Robots
           a.mr-8.text-lg.font-semibold.border-b.border-white( href="#contact" class="hover:border-gray-800 hover:text-gray-800" style="color: #5a7490" ) Contact Us
       div
-        iframe( width="720" height="405" src="https://www.youtube.com/embed/Bf6PckGF4eQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen )
+        iframe( width="720" height="405" src="https://www.youtube.com/embed/" + heroYoutubeId frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen )
         
   include hero/follow.pug

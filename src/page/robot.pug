@@ -1,5 +1,6 @@
 mixin robot(videoIds, playlistId, media)
   .container.mx-auto
-    section.grid.grid-flow-row.grid-cols-3.col-span-2.gap
+    section.flex.flex-row.flex-wrap.col-span-2
       each item in media
-        != item
+        .mr-2.mb-2
+          != item

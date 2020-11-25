@@ -1,14 +1,13 @@
 {
   "name": "daves-armoury",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "servor public"
+    "tailwind": "NODE_ENV=production tailwindcss-cli build ./index.css -o ../assets/styles.css"
   },
   "devDependencies": {
-    "autoprefixer": "^10.0.2",
-    "servor": "^4.0.2",
-    "tailwindcss": "^2.0.1"
+    "autoprefixer": "^9",
+    "tailwindcss": "^2.0.1",
+    "tailwindcss-cli": "^0.1.2"
   }
 }

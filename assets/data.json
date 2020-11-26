@@ -1,42 +1,50 @@
 {
   "latestVideos": [
     {
-      "thumbnail": "//placehold.it/1280x720",
-      "url":  "https://youtu.be/CZFdu2WD5rw"
+      "thumbnail": "https://img.youtube.com/vi/X8MW1txcXGE/0.jpg",
+      "url":  "https://youtu.be/X8MW1txcXGE"
     },
     {
-      "thumbnail": "//placehold.it/1280x720",
-      "url":  "https://youtu.be/CZFdu2WD5rw"
+      "thumbnail": "https://img.youtube.com/vi/OaigZlL1bp4/0.jpg",
+      "url":  "https://youtu.be/OaigZlL1bp4"
     },
     {
-      "thumbnail": "//placehold.it/1280x720",
-      "url":  "https://youtu.be/CZFdu2WD5rw"
+      "thumbnail": "https://img.youtube.com/vi/h_7xkxqCnUc/0.jpg",
+      "url":  "https://youtu.be/h_7xkxqCnUc"
     },
     {
-      "thumbnail": "//placehold.it/1280x720",
-      "url":  "https://youtu.be/CZFdu2WD5rw"
+      "thumbnail": "https://img.youtube.com/vi/RK76sbeUvys/0.jpg",
+      "url":  "https://youtu.be/RK76sbeUvys"
     }
   ],
   "susan": {
     "intro": {
-      "thumbnail": "//placehold.it/560x315",
+      "thumbnail": "assets/images/susan/Susan.jpg",
       "url": ""
     },
     "media": [
       {
-        "thumbnail": "//placehold.it/560x315",
+        "thumbnail": "assets/images/susan/susan1.jpg",
         "url": ""
       },
       {
-        "thumbnail": "//placehold.it/560x315",
+        "thumbnail": "assets/images/susan/susan2.jpg",
         "url": ""
       },
       {
-        "thumbnail": "//placehold.it/560x315",
+        "thumbnail": "assets/images/susan/susan3.jpg",
         "url": ""
       },
       {
-        "thumbnail": "//placehold.it/560x315",
+        "thumbnail": "assets/images/susan/susan4.jpg",
+        "url": ""
+      },
+      {
+        "thumbnail": "assets/images/susan/susan5.jpg",
+        "url": ""
+      },
+      {
+        "thumbnail": "assets/images/susan/susan6.jpg",
         "url": ""
       }
     ],
@@ -50,26 +58,35 @@
   },
   "herman": {
     "intro": {
-      "thumbnail": "//placehold.it/560x315",
+      "thumbnail": "assets/images/herman/Herman.jpg",
       "url": ""
     },
     "media": [
       {
-        "thumbnail": "//placehold.it/560x315",
+        "thumbnail": "assets/images/herman/herman1.jpg",
         "url": ""
       },
       {
-        "thumbnail": "//placehold.it/560x315",
+        "thumbnail": "assets/images/herman/herman2.jpg",
         "url": ""
       },
       {
-        "thumbnail": "//placehold.it/560x315",
+        "thumbnail": "assets/images/herman/herman3.jpg",
         "url": ""
       },
       {
-        "thumbnail": "//placehold.it/560x315",
+        "thumbnail": "assets/images/herman/herman4.jpg",
+        "url": ""
+      },
+      {
+        "thumbnail": "assets/images/herman/herman5.jpg",
+        "url": ""
+      },
+      {
+        "thumbnail": "assets/images/herman/herman6.jpg",
         "url": ""
       }
+
     ],
     "statistics": [
       {"field": "Manufacturer", "value": "Universal Robotics", "url": "https://www.universal-robots.com/"},

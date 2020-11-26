@@ -1,0 +1,82 @@
+{
+  "latestVideos": [
+    {
+      "thumbnail": "//placehold.it/1280x720",
+      "url":  "https://youtu.be/CZFdu2WD5rw"
+    },
+    {
+      "thumbnail": "//placehold.it/1280x720",
+      "url":  "https://youtu.be/CZFdu2WD5rw"
+    },
+    {
+      "thumbnail": "//placehold.it/1280x720",
+      "url":  "https://youtu.be/CZFdu2WD5rw"
+    },
+    {
+      "thumbnail": "//placehold.it/1280x720",
+      "url":  "https://youtu.be/CZFdu2WD5rw"
+    }
+  ],
+  "susan": {
+    "intro": {
+      "thumbnail": "//placehold.it/560x315",
+      "url": ""
+    },
+    "media": [
+      {
+        "thumbnail": "//placehold.it/560x315",
+        "url": ""
+      },
+      {
+        "thumbnail": "//placehold.it/560x315",
+        "url": ""
+      },
+      {
+        "thumbnail": "//placehold.it/560x315",
+        "url": ""
+      },
+      {
+        "thumbnail": "//placehold.it/560x315",
+        "url": ""
+      }
+    ],
+    "statistics": [
+      {"field": "Manufacturer", "value": "Kuka Robotics", "url": "https://www.kuka.com/"},
+      {"field": "Model", "value": "KR20", "url": "https://www.kuka.com/en-ca/products/robotics-systems/industrial-robots/kr-cybertech"},
+      {"field": "Max Payload", "value": "20Kg"},
+      {"field": "Reach", "value": "1813mm"},
+      {"field": "Axis", "value": "6"}
+    ]
+  },
+  "herman": {
+    "intro": {
+      "thumbnail": "//placehold.it/560x315",
+      "url": ""
+    },
+    "media": [
+      {
+        "thumbnail": "//placehold.it/560x315",
+        "url": ""
+      },
+      {
+        "thumbnail": "//placehold.it/560x315",
+        "url": ""
+      },
+      {
+        "thumbnail": "//placehold.it/560x315",
+        "url": ""
+      },
+      {
+        "thumbnail": "//placehold.it/560x315",
+        "url": ""
+      }
+    ],
+    "statistics": [
+      {"field": "Manufacturer", "value": "Universal Robotics", "url": "https://www.universal-robots.com/"},
+      {"field": "Model", "value": "UR3", "url": "https://www.universal-robots.com/products/ur3-robot/"},
+      {"field": "Max Payload", "value": "3Kg"},
+      {"field": "Reach", "value": "500mm"},
+      {"field": "Axis", "value": "6"}
+    ]
+  }
+}

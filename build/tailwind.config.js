@@ -6,6 +6,10 @@ module.exports = {
       colors : {
         primary : '#f7c680',
       },
+      maxWidth : {
+        '1/2' : '50%',
+        '3/4' : '75%',
+      },
     },
   },
   variants : {

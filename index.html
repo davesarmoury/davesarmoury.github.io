@@ -17,8 +17,8 @@
 </head>
 <body>
 <header class="flex flex-col h-screen bg-primary" id="top">
-  <div class="container flex items-center flex-grow mx-auto">
-    <section class="flex items-center justify-between">
+  <div class="container flex items-center flex-grow px-8 mx-auto md:px-0">
+    <section class="flex flex-col items-center justify-between lg:flex-row">
       <div class="mr-8">
         <h1 class="mb-4 text-3xl font-semibold leading-relaxed tracking-wide uppercase">
           uncommon and unique applications using industrial robotic arms!
@@ -26,32 +26,34 @@
         <p class="mb-8 text-xl font-light leading-normal text-gray-700">
           Hey, I'm Dave, and welcome to The Armoury.
           I've spent my entire career in the robotics industry, everything from wiring and calibration, up through software, and now I'm doing R&D robotics.
-          Watch the introduction video <i class="ml-2 text-gray-500 fa fa-arrow-right"></i>
+          Watch the introduction video
+          <span class="hidden ml-2 text-gray-500 lg:inline"><i class="fa fa-arrow-right"></i></span>
+          <span class="inline ml-2 text-gray-500 lg:hidden"><i class="fa fa-arrow-down"></i></span>
         </p>
         <div class="mb-8 text-lg font-light">
           <a href="#videos" style="color: #5a7490" class="mr-8 text-lg font-semibold border-b border-white hover:border-gray-800 hover:text-gray-800">Latest Videos</a>
           <a href="#robots" style="color: #5a7490" class="mr-8 text-lg font-semibold border-b border-white hover:border-gray-800 hover:text-gray-800">Meet the Robots</a>
-          <a href="#contact" style="color: #5a7490" class="mr-8 text-lg font-semibold border-b border-white hover:border-gray-800 hover:text-gray-800">Contact Us</a>
         </div>
       </div>
       <div>
         <!-- 560x315 -->
-        <iframe width="720" height="405" src="https://www.youtube.com/embed/Bf6PckGF4eQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="hidden md:block" width="720" height="405" src="https://www.youtube.com/embed/Bf6PckGF4eQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="block md:hidden" width="460" height="258" src="https://www.youtube.com/embed/Bf6PckGF4eQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </section>
   </div>
-  <div class="container mx-auto mb-24">
+  <div class="container px-8 mx-auto mb-24 md:px-0">
     <div class="mb-2 text-lg text-gray-700">
       Don't forget to follow us on social media!
     </div>
-    <ul class="flex items-center self-end justify-start mb-12 list-none">
-      <li class="mr-6"><a href="https://twitter.com/DavesArmoury" class="pb-2 text-gray-500 border-b border-gray-100 hover:border-gray-800 hover:text-gray-800 transition-colors"><i class="fa fa-twitter fa-2x"></i></a></li>
-      <li class="mr-6"><a href="https://github.com/DavesArmoury" class="pb-2 text-gray-500 border-b border-gray-100 hover:border-gray-800 hover:text-gray-800 transition-colors"><i class="fa fa-github fa-2x"></i></a></li>
-      <li class="mr-6"><a href="https://www.instagram.com/davesarmoury/" class="pb-2 text-gray-500 border-b border-gray-100 hover:border-gray-800 hover:text-gray-800 transition-colors"><i class="fa fa-instagram fa-2x"></i></a></li>
-      <li class="mr-6"><a href="https://www.youtube.com/c/davesarmoury" class="pb-2 text-gray-500 border-b border-gray-100 hover:border-gray-800 hover:text-gray-800 transition-colors"><i class="fa fa-youtube-play fa-2x"></i></a></li>
-      <li class="mr-6"><a href="https://discord.gg/FHs3NWw" class="pb-2 text-gray-500 border-b border-gray-100 hover:border-gray-800 hover:text-gray-800 transition-colors"><i class="fab fa-discord fa-2x"></i></a></li>
-      <li class="mr-6"><a href="https://patreon.com/davesarmoury" class="pb-2 text-gray-500 border-b border-gray-100 hover:border-gray-800 hover:text-gray-800 transition-colors"><i class="fab fa-patreon fa-2x"></i></a></li>
-      <li class="mr-6"><a href="https://www.facebook.com/Daves-Armoury-100600288467931/" class="pb-2 text-gray-500 border-b border-gray-100 hover:border-gray-800 hover:text-gray-800 transition-colors"><i class="fa fa-facebook fa-2x"></i></a></li>
+    <ul class="flex flex-wrap items-center self-end justify-start mb-12 list-none">
+      <li class="mb-6 mr-6"><a href="https://twitter.com/DavesArmoury" class="pb-2 text-gray-500 border-b border-gray-100 hover:border-gray-800 hover:text-gray-800 transition-colors"><i class="fa fa-twitter fa-2x"></i></a></li>
+      <li class="mb-6 mr-6"><a href="https://github.com/DavesArmoury" class="pb-2 text-gray-500 border-b border-gray-100 hover:border-gray-800 hover:text-gray-800 transition-colors"><i class="fa fa-github fa-2x"></i></a></li>
+      <li class="mb-6 mr-6"><a href="https://www.instagram.com/davesarmoury/" class="pb-2 text-gray-500 border-b border-gray-100 hover:border-gray-800 hover:text-gray-800 transition-colors"><i class="fa fa-instagram fa-2x"></i></a></li>
+      <li class="mb-6 mr-6"><a href="https://www.youtube.com/c/davesarmoury" class="pb-2 text-gray-500 border-b border-gray-100 hover:border-gray-800 hover:text-gray-800 transition-colors"><i class="fa fa-youtube-play fa-2x"></i></a></li>
+      <li class="mb-6 mr-6"><a href="https://discord.gg/FHs3NWw" class="pb-2 text-gray-500 border-b border-gray-100 hover:border-gray-800 hover:text-gray-800 transition-colors"><i class="fab fa-discord fa-2x"></i></a></li>
+      <li class="mb-6 mr-6"><a href="https://patreon.com/davesarmoury" class="pb-2 text-gray-500 border-b border-gray-100 hover:border-gray-800 hover:text-gray-800 transition-colors"><i class="fab fa-patreon fa-2x"></i></a></li>
+      <li class="mb-6 mr-6"><a href="https://www.facebook.com/Daves-Armoury-100600288467931/" class="pb-2 text-gray-500 border-b border-gray-100 hover:border-gray-800 hover:text-gray-800 transition-colors"><i class="fa fa-facebook fa-2x"></i></a></li>
     </ul>
   </div>
 </header>
@@ -70,22 +72,22 @@
   <section class="flex flex-col items-center justify-center h-full pt-12 overflow-hidden">
     <div class="container mx-auto mb-12">
       <div class="flex items-center justify-between w-full">
-        <h2 class="text-2xl uppercase"><a href="#robots" class="text-gray-400 border-gray-400 hover:border-b">#</a> The Robots</h2>
+        <h2 class="text-2xl uppercase"><a href="#robots" class="text-gray-400 border-gray-400 hover:border-b">#</a> Meet The Robots</h2>
         <a href="#top" class="text-gray-300 border-b border-transparent hover:border-gray-300">Back to Top <i class="fa fa-arrow-up"></i></a>
       </div>
     </div>
-    <div class="flex items-center justify-center flex-grow w-full text-gray-100 bg-gray-900">
+    <div class="flex flex-col items-center justify-center flex-grow w-full text-gray-100 bg-gray-900 lg:flex-row">
 
-      <div class="flex flex-col items-center justify-center flex-grow h-full border-r border-gray-500 hover:bg-gray-800 transition-colors">
+      <div class="flex flex-col items-center justify-center flex-grow w-full h-full hover:bg-gray-800 transition-colors md:w-auto">
         <div id="app-intro-susan"></div>
         <h3 class="mb-8 text-4xl font-semibold">Hello, I'm Susan.</h3>
-        <p><a href="#robots-susan" class="underline text=gray-100">Click here</a> for more details.</p>
+        <p><a href="#robots-susan" class="text-gray-100 underline">Click here</a> for more details.</p>
       </div>
 
-      <div class="flex flex-col items-center justify-center flex-grow h-full border-r border-gray-500 hover:bg-gray-800 transition-colors">
+      <div class="flex flex-col items-center justify-center flex-grow w-full h-full hover:bg-gray-800 transition-colors md:w-auto">
         <div id="app-intro-herman"></div>
         <h3 class="mb-8 text-4xl font-semibold">Hi, I'm Herman</h3>
-        <p><a href="#robots-herman" class="underline text=gray-100">Click here</a> for more details.</p>
+        <p><a href="#robots-herman" class="text-gray-100 underline">Click here</a> for more details.</p>
       </div>
 
     </div>
@@ -99,10 +101,10 @@
       <a href="#top" class="text-gray-300 border-b border-transparent hover:border-gray-300">Back to Top <i class="fa fa-arrow-up"></i></a>
     </div>
   </section>
-  <div class="flex flex-col items-center justify-center flex-grow w-full py-12 bg-yellow-300">
-    <section class="container flex flex-col items-center justify-between flex-grow w-full h-full mx-auto sm:flex-row">
+  <div class="flex flex-col items-center justify-between flex-grow w-full py-12 bg-yellow-300">
+    <section class="container flex flex-col items-center justify-start flex-grow w-full h-full mx-auto lg:justify-between sm:flex-row">
       <div id="app-media-susan"></div>
-      <div>
+      <div class="mt-12 lg:mt-0">
         <h3 class="mb-8 text-2xl text-gray-600 underline">Specifications</h3>
         <div id="app-statistics-susan"></div>
       </div>
@@ -117,10 +119,10 @@
       <a href="#top" class="text-gray-300 border-b border-transparent hover:border-gray-300">Back to Top <i class="fa fa-arrow-up"></i></a>
     </div>
   </section>
-  <div class="flex flex-col items-center justify-center flex-grow w-full py-12 bg-gray-100">
-    <section class="container flex flex-col items-center justify-between flex-grow w-full h-full mx-auto sm:flex-row">
+  <div class="flex flex-col items-center justify-between flex-grow w-full py-12 bg-gray-100">
+    <section class="container flex flex-col items-center justify-start flex-grow w-full h-full mx-auto lg:justify-between sm:flex-row">
       <div id="app-media-herman"></div>
-      <div>
+      <div class="mt-12 lg:mt-0">
         <h3 class="mb-8 text-2xl text-gray-600 underline">Specifications</h3>
         <div id="app-statistics-herman"></div>
       </div>

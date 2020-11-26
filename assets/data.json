@@ -25,27 +25,27 @@
     "media": [
       {
         "thumbnail": "assets/images/susan/susan1.jpg",
-        "url": ""
+        "url": "https://www.instagram.com/p/CHRapOhggEd/"
       },
       {
         "thumbnail": "assets/images/susan/susan2.jpg",
-        "url": ""
+        "url": "https://www.instagram.com/p/CHLCljXgIl_/"
       },
       {
         "thumbnail": "assets/images/susan/susan3.jpg",
-        "url": ""
+        "url": "https://www.instagram.com/p/CHn6QmEALQl/"
       },
       {
         "thumbnail": "assets/images/susan/susan4.jpg",
-        "url": ""
+        "url": "https://www.instagram.com/p/CHRapOhggEd/"
       },
       {
         "thumbnail": "assets/images/susan/susan5.jpg",
-        "url": ""
+        "url": "https://www.instagram.com/p/CHRapOhggEd/"
       },
       {
         "thumbnail": "assets/images/susan/susan6.jpg",
-        "url": ""
+        "url": "https://www.instagram.com/p/CH7_VrrAG6Q/"
       }
     ],
     "statistics": [
@@ -64,29 +64,32 @@
     "media": [
       {
         "thumbnail": "assets/images/herman/herman1.jpg",
-        "url": ""
+        "url": "https://www.instagram.com/p/CFcLRAvH79V/"
       },
       {
         "thumbnail": "assets/images/herman/herman2.jpg",
-        "url": ""
+        "url": "https://youtu.be/OaigZlL1bp4"
       },
       {
         "thumbnail": "assets/images/herman/herman3.jpg",
-        "url": ""
+        "url": "https://youtu.be/OaigZlL1bp4"
       },
       {
         "thumbnail": "assets/images/herman/herman4.jpg",
-        "url": ""
+        "url": "https://youtu.be/X8MW1txcXGE"
       },
       {
         "thumbnail": "assets/images/herman/herman5.jpg",
-        "url": ""
+        "url": "https://www.instagram.com/p/CHdZfadgcs3/"
       },
       {
         "thumbnail": "assets/images/herman/herman6.jpg",
-        "url": ""
+        "url": "https://www.instagram.com/p/CHdZfadgcs3/"
+      },
+      {
+        "thumbnail": "assets/images/youtube.jpg",
+        "url": "https://www.youtube.com/playlist?list=PLPuVPTUAa8Pf3GkS737YAMd9pUQ_IRxCh"
       }
-
     ],
     "statistics": [
       {"field": "Manufacturer", "value": "Universal Robotics", "url": "https://www.universal-robots.com/"},

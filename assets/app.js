@@ -2,17 +2,24 @@ import {app, h, text} from '/assets/hyperapp.js';
 
 const load = () => fetch('/assets/data.json').then((r) => r.json())
 
+const imgClasses = (size) => ({
+  'h-auto' : true,
+  'sm:w-auto' : true,
+  [`sm:${size}`] : true,
+});
+
 const thumbnailWithUrl = ({thumbnail, url, size}) => h(
     'a',
     {
       href : url,
       target : '_blank',
+      class : imgClasses(size),
     },
-    h('img', {src : thumbnail, class : {'w-auto' : true, [size] : true}}),
+    h('img', {src : thumbnail, class : 'h-full w-auto'}),
 );
 
 const thumbnailWithoutUrl = ({thumbnail, size}) =>
-    h('img', {src : thumbnail, class : {'w-auto' : true, [size] : true}});
+    h('img', {src : thumbnail, class : imgClasses(size)});
 
 const thumbnail = (props) => {
   const size = props.size || 'h-48';
@@ -24,24 +31,60 @@ const thumbnail = (props) => {
 const mountLatestVideosApp = (latestVideos) => {
   app({
     init : {
-      latestVideos :
-          latestVideos.map((lv) => ({...lv, size : lv.size || 'h-48'}))
+      latest : latestVideos[0],
+      videos : latestVideos.slice(1).map(
+          (lv) => ({...lv, size : lv.size || 'h-48'})),
     },
-    view : state => h(
-        'div',
-        {
-          class : [
-            'flex',
-            'flex-row',
-            'flex-wrap',
-            'items-center',
-            'justify-between',
-            'w-full',
-            'flex-grow',
+    view : state => {
+      const largeColumns = Math.min(4, state.videos.length);
+      // lg:grid-cols-1
+      // lg:grid-cols-2
+      // lg:grid-cols-3
+      // lg:grid-cols-4
+
+      return h(
+          'div',
+          {
+            class : 'w-full px-2',
+          },
+          [
+            h('div', {
+              class : [
+                'flex',
+                'items-center',
+                'justify-center',
+                'mb-4',
+                'w-full',
+                'flex-grow',
+              ],
+            },
+              h(
+                  'a',
+                  {
+                    href : state.latest.url,
+                    target : '_blank',
+                    class : 'md:w-3/5 w-full',
+                  },
+                  h('img',
+                    {src : state.latest.thumbnail, class : 'w-full h-auto'}),
+                  )),
+            h(
+                'div',
+                {
+                  class : [
+                    'grid',
+                    'grid-cols-2',
+                    `lg:grid-cols-${largeColumns}`,
+                    'gap-1',
+                    'w-full',
+                    'flex-grow',
+                  ],
+                },
+                state.videos.map(thumbnail),
+                ),
           ],
-        },
-        state.latestVideos.map(thumbnail),
-        ),
+      );
+    },
     node : document.querySelector('#latest-videos'),
   });
 };
@@ -108,23 +151,37 @@ const mountRobotStatisticsApp = (statistics, node) => {
 const mountRobotMediaApp = (media, node) => {
   app({
     init : {media},
-    view : state => h(
-        'div',
-        {
-          class : [
-            'flex',
-            'flex-row',
-            'flex-wrap',
-            'items-start',
-            'justify-center',
-            'lg:justify-start',
-            'sm:max-w-3/4',
-          ],
-        },
-        state.media.map(
-            (props) => h('div', {class : 'mr-2 mb-2'}, thumbnail(props)),
-            ),
-        ),
+    view : state => {
+      const largeColumns = Math.min(3, state.media.length);
+      // lg:grid-cols-1
+      // lg:grid-cols-2
+      // lg:grid-cols-3
+      return h(
+          'div',
+          {
+            class : [
+              'grid',
+              'grid-cols-2',
+              `lg:grid-cols-${largeColumns}`,
+              'gap-1',
+              'w-full',
+              'flex-grow',
+              'sm:mr-8',
+            ],
+          },
+          state.media.map(
+              (props) => h(
+                  'div',
+                  {
+                    style : {
+                      'background-image' : `url(${props.thumbnail})`,
+                    },
+                    class : 'bg-cover bg-center h-48 md:h-96'
+                  },
+                  ),
+              ),
+      );
+    },
     node,
   });
 };

@@ -3,9 +3,18 @@ import {app, h, text} from '/assets/hyperapp.js';
 const load = () => fetch('/assets/data.json').then((r) => r.json())
 
 const imgClasses = (size) => ({
-  'h-auto' : true,
-  'sm:w-auto' : true,
-  [`sm:${size}`] : true,
+  [size.w] : true,
+  [size.h] : true,
+  'bg-contain' : true,
+  'bg-center' : true,
+  'bg-no-repeat' : true,
+});
+
+const thumbnailWithoutUrl = ({thumbnail, size}) => h('div', {
+  style : {
+    'background-image' : `url(${thumbnail})`,
+  },
+  class : imgClasses(size)
 });
 
 const thumbnailWithUrl = ({thumbnail, url, size}) => h(
@@ -13,16 +22,15 @@ const thumbnailWithUrl = ({thumbnail, url, size}) => h(
     {
       href : url,
       target : '_blank',
-      class : imgClasses(size),
     },
-    h('img', {src : thumbnail, class : 'h-full w-auto'}),
+    thumbnailWithoutUrl({thumbnail, size}),
 );
 
-const thumbnailWithoutUrl = ({thumbnail, size}) =>
-    h('img', {src : thumbnail, class : imgClasses(size)});
-
 const thumbnail = (props) => {
-  const size = props.size || 'h-48';
+  const size = {
+    w : props.size && props.size.w || 'w-full',
+    h : props.size && props.size.h || 'h-48',
+  };
   const thumbnailProps = {...props, size};
   return props.url ? thumbnailWithUrl(thumbnailProps)
                    : thumbnailWithoutUrl(thumbnailProps);
@@ -32,8 +40,7 @@ const mountLatestVideosApp = (latestVideos) => {
   app({
     init : {
       latest : latestVideos[0],
-      videos : latestVideos.slice(1).map(
-          (lv) => ({...lv, size : lv.size || 'h-48'})),
+      videos : latestVideos.slice(1),
     },
     view : state => {
       const largeColumns = Math.min(4, state.videos.length);
@@ -94,10 +101,13 @@ const mountRobotIntroApp = (intro, node) => {
     init : {intro},
     view : state => h(
         'div',
-        {class : 'mb-8 p-1 border border-gray-100'},
+        {class : 'my-8 p-1 border border-gray-100 w-3/5'},
         thumbnail({
           ...state.intro,
-          size : 'h-auto',
+          size : {
+            h : 'h-64',
+            w : 'w-full',
+          }
         }),
         ),
     node,

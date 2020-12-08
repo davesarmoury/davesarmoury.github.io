@@ -30,14 +30,15 @@
   <script src="/assets/app.js" type="module"></script>
 </head>
 <body>
-<header class="flex flex-col min-h-screen bg-primary" id="top">
-  <div class="container flex items-center flex-grow px-8 mx-auto md:px-0">
-    <section class="flex flex-col items-center justify-between w-full py-8 lg:flex-row">
+
+<header class="flex flex-col h-screen bg-primary" id="top">
+  <div class="container flex items-center flex-grow h-full px-8 mx-auto">
+    <section class="flex flex-col items-center justify-between flex-grow w-full py-8 sm:py-8 lg:flex-row">
       <div class="lg:mr-8">
-        <h1 class="mb-4 text-3xl font-semibold leading-relaxed tracking-wide uppercase w">
+        <h1 class="mb-4 text-lg font-semibold leading-relaxed tracking-wide uppercase sm:text-3xl w">
           uncommon and unique applications using industrial robotic arms!
         </h1>
-        <p class="mb-8 text-xl font-light leading-normal text-gray-700">
+        <p class="mb-8 font-light leading-normal text-gray-700 text-md">
           Hey, I'm Dave, and welcome to The Armoury.
           I've spent my entire career in the robotics industry, everything from wiring and calibration, up through software, and now I'm doing R&D robotics.
           Watch the introduction video
@@ -56,11 +57,11 @@
       </div>
     </section>
   </div>
-  <div class="container px-8 mx-auto mb-12 md:mb-24 md:px-0">
+  <div class="container px-8 mx-auto md:mb-24 md:px-0">
     <div class="mb-2 text-lg text-gray-700">
       Don't forget to follow us on social media!
     </div>
-    <ul class="flex flex-wrap items-center self-end justify-start mb-12 list-none">
+    <ul class="flex flex-wrap items-center self-end justify-start list-none md:mb-12">
       <li class="mb-6 mr-6"><a href="https://twitter.com/DavesArmoury" target="_blank" class="pb-2 text-gray-500 border-b border-gray-100 hover:border-gray-800 hover:text-gray-800 transition-colors"><i class="text-lg md:text-4xl fa fa-twitter"></i></a></li>
       <li class="mb-6 mr-6"><a href="https://github.com/DavesArmoury" target="_blank" class="pb-2 text-gray-500 border-b border-gray-100 hover:border-gray-800 hover:text-gray-800 transition-colors"><i class="text-lg fa fa-github md:text-4xl"></i></a></li>
       <li class="mb-6 mr-6"><a href="https://www.instagram.com/davesarmoury/" target="_blank" class="pb-2 text-gray-500 border-b border-gray-100 hover:border-gray-800 hover:text-gray-800 transition-colors"><i class="text-lg fa fa-instagram md:text-4xl"></i></a></li>
@@ -72,7 +73,7 @@
   </div>
 </header>
 
-<article class="h-screen bg-gray-100 sm:min-h-screen" id="videos">
+<article class="block min-h-screen overflow-hidden bg-gray-100" id="videos">
   <section class="container flex flex-col items-center justify-center h-full pt-12 mx-auto">
     <div class="flex items-center justify-between w-full px-2 mb-12 sm:px-0">
       <h2 class="text-2xl uppercase"><a href="#videos" class="text-gray-400 border-gray-400 hover:border-b">#</a> Latest Videos</h2>
@@ -84,7 +85,7 @@
   </section>
 </article>
 
-<article class="min-h-screen sm:h-screen" id="robots">
+<article class="sm:h-screen" id="robots">
   <section class="flex flex-col items-center justify-center h-full pt-12 overflow-hidden">
     <div class="container mx-auto mb-12">
       <div class="flex items-center justify-between w-full px-2 sm:px-0">
@@ -110,7 +111,7 @@
   </section>
 </article>
 
-<article class="flex flex-col items-center justify-start min-h-screen" id="robots-susan">
+<article class="flex flex-col items-center justify-start sm:min-h-screen" id="robots-susan">
   <section class="container pt-12">
     <div class="flex items-center justify-between flex-none w-full px-2 mb-12 sm:px-0">
       <h2 class="text-2xl uppercase"><a href="#robots-susan" class="text-gray-400 border-gray-400 hover:border-b">#</a> Meet Susan</h2>
@@ -128,7 +129,7 @@
   </div>
 </article>
 
-<article class="flex flex-col items-center justify-start min-h-screen" id="robots-herman">
+<article class="flex flex-col items-center justify-start sm:min-h-screen" id="robots-herman">
   <section class="container pt-12">
     <div class="flex items-center justify-between flex-none w-full px-2 mb-12 sm:px-0">
       <h2 class="text-2xl uppercase"><a href="#robots-herman" class="text-gray-400 border-gray-400 hover:border-b">#</a> Meet Herman</h2>

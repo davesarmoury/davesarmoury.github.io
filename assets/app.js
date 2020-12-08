@@ -94,7 +94,7 @@ const mountRobotIntroApp = (intro, node) => {
     init : {intro},
     view : state => h(
         'div',
-        {class : 'mb-8'},
+        {class : 'mb-8 p-1 border border-gray-100'},
         thumbnail({
           ...state.intro,
           size : 'h-auto',

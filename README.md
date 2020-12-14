@@ -3,7 +3,7 @@
 ## Notes for Dave
 
 ### Static Local Hosting/Testing
-    npm servor .
+    npx servor .
 
 ### Image Resizing
     convert '*.jpg[480x]' -set filename:base "%[basename]" "smaller/%[filename:base].jpg"

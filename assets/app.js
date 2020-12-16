@@ -181,8 +181,9 @@ const mountRobotMediaApp = (media, node) => {
           },
           state.media.map(
               (props) => h(
-                  'div',
+                  props.url ? 'a' : 'div',
                   {
+                    href: props.url,
                     style : {
                       'background-image' : `url(${props.thumbnail})`,
                     },

@@ -552,12 +552,12 @@ video {
 
 .bg-gray-900 {
   --tw-bg-opacity: 1;
-  background-color: rgba(62, 72, 85, var(--tw-bg-opacity));
+  background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
 }
 
 .bg-yellow-300 {
   --tw-bg-opacity: 1;
-  background-color: rgba(247, 198, 128, var(--tw-bg-opacity));
+  background-color: rgba(252, 211, 77, var(--tw-bg-opacity));
 }
 
 .bg-primary {
@@ -567,7 +567,7 @@ video {
 
 .hover\:bg-gray-800:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(90, 116, 144, var(--tw-bg-opacity));
+  background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
 }
 
 .bg-center {
@@ -1000,6 +1000,11 @@ video {
 
   .sm\:h-screen {
     height: 100vh;
+  }
+
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .sm\:text-3xl {

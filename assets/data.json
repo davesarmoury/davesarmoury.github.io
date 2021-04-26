@@ -98,5 +98,23 @@
       {"field": "Reach", "value": "500mm"},
       {"field": "Axis", "value": "6"}
     ]
-  }
+  },
+  "technologies": [
+    {
+      "thumbnail": "https://img.youtube.com/vi/PktztjQE_D4/0.jpg",
+      "url":  "https://youtu.be/PktztjQE_D4"
+    },
+    {
+      "thumbnail": "https://img.youtube.com/vi/agUdUvgV-A8/0.jpg",
+      "url":  "https://youtu.be/agUdUvgV-A8"
+    },
+    {
+      "thumbnail": "https://img.youtube.com/vi/UDRlp8UcjIE/0.jpg",
+      "url":  "https://youtu.be/UDRlp8UcjIE"
+    },
+    {
+      "thumbnail": "https://img.youtube.com/vi/qTcD49UrDjQ/0.jpg",
+      "url":  "https://youtu.be/qTcD49UrDjQ"
+    }
+  ]
 }

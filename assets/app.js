@@ -197,6 +197,66 @@ const mountRobotMediaApp = (media, node) => {
   });
 };
 
+const mountTechnologiesApp = (technologies) => {
+  app({
+    init : {
+      latest : technologies[0],
+      techs : technologies.slice(1),
+    },
+    view : state => {
+      const largeColumns = Math.min(4, state.techs.length);
+      // lg:grid-cols-1
+      // lg:grid-cols-2
+      // lg:grid-cols-3
+      // lg:grid-cols-4
+
+      return h(
+          'div',
+          {
+            class : 'w-full px-2',
+          },
+          [
+            h('div', {
+              class : [
+                'flex',
+                'items-center',
+                'justify-center',
+                'mb-4',
+                'w-full',
+                'flex-grow',
+              ],
+            },
+              h(
+                  'a',
+                  {
+                    href : state.latest.url,
+                    target : '_blank',
+                    class : 'md:w-3/5 w-full',
+                  },
+                  h('img',
+                    {src : state.latest.thumbnail, class : 'w-full h-auto'}),
+                  )),
+            h(
+                'div',
+                {
+                  class : [
+                    'grid',
+                    'grid-cols-2',
+                    `lg:grid-cols-${largeColumns}`,
+                    'gap-1',
+                    'w-full',
+                    'flex-grow',
+                  ],
+                },
+                state.techs.map(thumbnail),
+                ),
+          ],
+      );
+    },
+    node : document.querySelector('#technologies'),
+  });
+};
+
 load().then((data) => {
   mountLatestVideosApp(data.latestVideos);
 
@@ -225,4 +285,6 @@ load().then((data) => {
       data.herman.media,
       document.querySelector('#app-media-herman'),
   );
+
+  mountTechnologiesApp(data.technologies);
 });

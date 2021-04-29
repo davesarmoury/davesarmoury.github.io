@@ -105,28 +105,28 @@
       "url":  "https://bit.ly/2SeCq7x"
     },
     {
-      "thumbnail": "assets/images/logos/connecttech.png", #NEED LOGO#
+      "thumbnail": "assets/images/logos/connecttech.png",
       "url":  "https://bit.ly/3wQ9Skt"
+    },
+    {
+      "thumbnail": "assets/images/logos/stereolabs.png",
+      "url":  "https://bit.ly/3gNCDce"
+    },
+    {
+      "thumbnail": "assets/images/logos/robotiq.png",
+      "url":  "https://bit.ly/3gUeEI2"
+    },
+    {
+      "thumbnail": "assets/images/logos/ParkerLORD.png",
+      "url":  "https://bit.ly/3t3g99g"
     },
     {
       "thumbnail": "assets/images/logos/pushcorp-white.png",
       "url":  "https://bit.ly/2QxsiXa"
     },
     {
-      "thumbnail": "assets/images/logos/stereolabs.png", #NEED LOGO#
-      "url":  "https://bit.ly/3gNCDce"
-    },
-    {
-      "thumbnail": "assets/images/logos/robotiq.png", #NEED LOGO#
-      "url":  "https://bit.ly/3gUeEI2"
-    },
-    {
       "thumbnail": "assets/images/logos/rosin.png",
       "url":  "https://bit.ly/3vtaifb"
-    },
-    {
-      "thumbnail": "assets/images/logos/ParkerLORD.png",
-      "url":  "https://bit.ly/3t3g99g"
     }
   ]
 }

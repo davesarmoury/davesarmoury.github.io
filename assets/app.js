@@ -212,10 +212,11 @@ const mountTechnologiesApp = (technologies) => {
                 {
                   class : [
                     'grid',
-                    'grid-cols-2',
+                    'grid-cols-1',
                     `lg:grid-cols-${largeColumns}`,
                     'gap-1',
                     'w-full',
+                    'h-auto',
                     'flex-grow',
                   ],
                 },
@@ -228,7 +229,7 @@ const mountTechnologiesApp = (technologies) => {
                           style : {
                             'background-image' : `url(${props.thumbnail})`,
                           },
-                          class : 'bg-cover bg-center h-48 md:h-96'
+                          class : 'bg-cover bg-center h-48 md:h-full'
                         },
                     ),
                 ),

@@ -101,20 +101,32 @@
   },
   "technologies": [
     {
-      "thumbnail": "https://img.youtube.com/vi/PktztjQE_D4/0.jpg",
-      "url":  "https://youtu.be/PktztjQE_D4"
+      "thumbnail": "assets/images/logos/kuka.png",
+      "url":  "https://bit.ly/2SeCq7x"
     },
     {
-      "thumbnail": "https://img.youtube.com/vi/agUdUvgV-A8/0.jpg",
-      "url":  "https://youtu.be/agUdUvgV-A8"
+      "thumbnail": "assets/images/logos/connecttech.png", #NEED LOGO#
+      "url":  "https://bit.ly/3wQ9Skt"
     },
     {
-      "thumbnail": "https://img.youtube.com/vi/UDRlp8UcjIE/0.jpg",
-      "url":  "https://youtu.be/UDRlp8UcjIE"
+      "thumbnail": "assets/images/logos/pushcorp-white.png",
+      "url":  "https://bit.ly/2QxsiXa"
     },
     {
-      "thumbnail": "https://img.youtube.com/vi/qTcD49UrDjQ/0.jpg",
-      "url":  "https://youtu.be/qTcD49UrDjQ"
+      "thumbnail": "assets/images/logos/stereolabs.png", #NEED LOGO#
+      "url":  "https://bit.ly/3gNCDce"
+    },
+    {
+      "thumbnail": "assets/images/logos/robotiq.png", #NEED LOGO#
+      "url":  "https://bit.ly/3gUeEI2"
+    },
+    {
+      "thumbnail": "assets/images/logos/rosin.png",
+      "url":  "https://bit.ly/3vtaifb"
+    },
+    {
+      "thumbnail": "assets/images/logos/ParkerLORD.png",
+      "url":  "https://bit.ly/3t3g99g"
     }
   ]
 }

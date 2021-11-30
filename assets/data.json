@@ -1,6 +1,10 @@
 {
   "latestVideos": [
     {
+      "thumbnail": "https://img.youtube.com/vi/AVp1tndzV34/0.jpg",
+      "url":  "https://youtu.be/AVp1tndzV34"
+    },
+    {
       "thumbnail": "https://img.youtube.com/vi/_jIlzhhesnY/0.jpg",
       "url":  "https://youtu.be/_jIlzhhesnY"
     },
@@ -11,10 +15,6 @@
     {
       "thumbnail": "https://img.youtube.com/vi/86YysaO5nGw/0.jpg",
       "url":  "https://youtu.be/86YysaO5nGw"
-    },
-    {
-      "thumbnail": "https://img.youtube.com/vi/f-BGuowW2zY/0.jpg",
-      "url":  "https://youtu.be/f-BGuowW2zY"
     },
     {
       "thumbnail": "assets/images/youtube.png",
